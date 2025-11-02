@@ -16,9 +16,9 @@ import tkinter as tk
 from PIL import Image, ImageTk
 
 # Import các module nội bộ hỗ trợ
-from .nat import RelayClient, RelayConfig, discover_reflexive_address, send_hole_punch
-from .metrics_overlay import LocalVideoStats, MetricsOverlay
-from .srudp import SRUDPConnection
+from source.network_core.nat import RelayClient, RelayConfig, discover_reflexive_address, send_hole_punch
+from source.client.metrics_overlay import LocalVideoStats, MetricsOverlay
+from source.network_core.srudp import SRUDPConnection
 
 # Cấu hình log cơ bản (in ra màn hình terminal)
 logging.basicConfig(level=logging.INFO, format="[%(levelname)s] %(message)s")

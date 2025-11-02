@@ -16,8 +16,8 @@ import pyautogui     # Thư viện để điều khiển chuột, bàn phím, v.
 from PIL import ImageGrab  # Thư viện Pillow: dùng để chụp ảnh màn hình
 
 # Import các module nội bộ của dự án SR-VNC
-from .nat import RelayClient, RelayConfig, discover_reflexive_address, send_hole_punch
-from .srudp import SRUDPConnection  # Giao thức truyền dữ liệu tùy chỉnh (UDP có bảo đảm hơn)
+from source.network_core.nat import RelayClient, RelayConfig, discover_reflexive_address, send_hole_punch
+from source.network_core.srudp import SRUDPConnection  # Giao thức truyền dữ liệu tùy chỉnh (UDP có bảo đảm hơn)
 
 logging.basicConfig(level=logging.INFO, format="[%(levelname)s] %(message)s")
 pyautogui.FAILSAFE = False  # Tắt chế độ an toàn (không dừng nếu chuột chạm góc màn hình)
