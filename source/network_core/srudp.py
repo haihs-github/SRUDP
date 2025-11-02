@@ -30,7 +30,7 @@ from typing import Callable, Deque, Dict, Iterable, Optional, Tuple
 import struct
 
 # Import từ module crypto nội bộ (file khác trong project)
-from .crypto import (
+from crypto import (
     RekeyRequired,  # exception báo hiệu codec cần rekey (đổi key)
     ReplayError,    # exception báo replay (gói bị gửi lại)
     SecureCodec,    # lớp codec thực hiện encrypt/decrypt, nonce, packet_number...
